@@ -1,0 +1,30 @@
+const mongoose = require('mongoose');
+
+const MONGO_URI = //add new cluster
+  'mongodb+srv://julianamorrelli28:Peted2288!@cluster0.vluz2oc.mongodb.net/?retryWrites=true&w=majority';
+
+mongoose
+  .connect(MONGO_URI, {
+    // options for the connect method to parse the URI
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    // sets the name of the DB that our collections are part of
+    // dbName: 'starwars',
+    dbName: 'SoloProject',
+  })
+  .then(() => console.log('Connected to Mongo DB.'))
+  .catch((err) => console.log(err));
+
+const Schema = mongoose.Schema;
+
+const mileageSchema = new Schema({
+  averageMileTime: { type: String, required: true },
+  date: { type: String, required: true },
+  mileage: { type: String, required: true },
+  perceivedExertion: { type: String, required: true },
+  totalTime: { type: String, required: true },
+  weather: { type: String, required: true },
+});
+
+const Mileage = mongoose.model('Mileages', mileageSchema);
+module.exports = { Mileage };
