@@ -4,11 +4,11 @@ import PrevSeshDisplay from './components/PrevSeshDisplay';
 import CurrSeshDisplay from './components/CurrSeshDisplay';
 
 const MainContainer = ({ runData }) => {
-  console.log('run data in main container', runData);
+  // console.log('run data in main container', runData);
   return (
     <div className="mainContainer">
-      <PrevSeshDisplay runData={runData} />
       <CurrSeshDisplay />
+      <PrevSeshDisplay runData={runData} />
     </div>
   );
 };

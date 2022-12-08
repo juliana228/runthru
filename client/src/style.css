@@ -148,27 +148,37 @@ header {
   font-style: italic;
   /* border: 1px solid black; */
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   font-size: 6vw;
   color: rgb(67, 67, 67);
   letter-spacing: 10px;
 }
 
-.mainContainer {
+/* .mainContainer {
   display: flex;
   justify-content: space-around;
-}
+} */
 
 .prevSeshContainer h2,
 .currSeshContainer h2 {
-  font-size: 20px;
+  font-size: 3vw;
   font-family: 'Quicksand', sans-serif;
+  color: rgb(103, 103, 103);
+}
+label {
+  color: rgb(103, 103, 103);
+}
+
+p {
+  color: rgb(103, 103, 103);
 }
 
 .currSeshContainer {
+  text-align: center;
   padding: 20px;
   /* border: 1px dotted grey; */
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-bottom: 100px;
 }
 
 .prevSeshContainer {
@@ -183,4 +193,12 @@ header {
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 2vw;
+}
+
+.run {
+  margin-bottom: 40px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /* background-color: white; */
 }

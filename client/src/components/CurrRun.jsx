@@ -16,7 +16,7 @@ const CurrRun = () => {
     totalTime: totalTime,
     weather: weather,
   };
-  console.log(dataBody);
+  // console.log(dataBody);
 
   const addRun = () => {
     fetch('http://localhost:3000/api', {
