@@ -7,13 +7,13 @@ import MainContainer from './MainContainer';
 const App = () => {
   const [runs, setRuns] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:3000/api/')
+    fetch('http://localhost:3000/api')
       .then((data) => data.json())
       .then((runData) => {
         setRuns(runData);
       })
       .catch((err) => console.log('cannot get runData', err));
-  }, []);
+  });
 
   return (
     <div>

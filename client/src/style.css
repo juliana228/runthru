@@ -164,21 +164,27 @@ header {
   font-size: 3vw;
   font-family: 'Quicksand', sans-serif;
   color: rgb(103, 103, 103);
+  margin-bottom: 20px;
 }
 label {
   color: rgb(103, 103, 103);
+  /* padding-left: 200px; */
 }
 
 p {
   color: rgb(103, 103, 103);
 }
 
+/* .mainContainer {
+  display: flex;
+  justify-content: space-around;
+} */
 .currSeshContainer {
   text-align: center;
   padding: 20px;
   /* border: 1px dotted grey; */
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .prevSeshContainer {
@@ -192,7 +198,7 @@ p {
   font-family: 'Quicksand', sans-serif;
   margin-bottom: 5px;
   margin-top: 5px;
-  font-size: 2vw;
+  font-size: 1.4vw;
 }
 
 .run {
@@ -201,4 +207,16 @@ p {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   /* background-color: white; */
+}
+
+button {
+  font-family: 'Quicksand', sans-serif;
+  margin-right: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+}
+
+button:active {
+  background-color: rgb(222, 220, 220);
 }

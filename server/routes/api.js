@@ -10,4 +10,8 @@ router.post('/', runController.postNewRun, (req, res) => {
   res.status(200);
 });
 
+router.delete('/', runController.deleteRun, (req, res) => {
+  res.status(200);
+});
+
 module.exports = router;

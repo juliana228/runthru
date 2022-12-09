@@ -5,6 +5,7 @@ const PrevSeshDisplay = ({ runData }) => {
   // console.log(runData);
   const prevRuns = [];
   for (let i = 0; i < runData.length; i++) {
+    // console.log(runData[i]._id);
     prevRuns.push(
       <PrevRun
         key={i}

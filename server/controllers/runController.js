@@ -46,4 +46,18 @@ runController.postNewRun = async (req, res, next) => {
   }
 };
 
+runController.deleteRun = async (req, res, next) => {
+  console.log(req.body);
+  try {
+    await Mileage.deleteOne(req.body);
+    return next();
+  } catch (err) {
+    return next({
+      log: 'error thrown while trying to delete run',
+      message: { err: 'error in deleteRun middleware' },
+    });
+  }
+  // console.log(req.params._id);
+};
+
 module.exports = runController;
